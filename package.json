@@ -1,4 +1,5 @@
 {
+    // when publishing use npm publish --access=public
     "name": "easy-cryptography-js",
     "version": "0.0.8",
     "description": "it is an Easy to use Encryption and Decryption Package",
@@ -11,5 +12,11 @@
     "repository": {
         "url": "https://github.com/DevSamuelV/Easy-Cryptography-js.git"
     },
-    "dependencies": {}
+    "dependencies": {},
+    "keywords": [
+        "aes",
+        "crypto-js",
+        "cryptography",
+        "easy cryptography"
+    ]
 }
