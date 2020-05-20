@@ -1,4 +1,4 @@
-# Cryptography-JS
+# Cryptography-JS ![ubuntu CI](https://github.com/DevSamuelV/Easy-Cryptography-js/workflows/ubuntu%20CI/badge.svg)
 
 ### Install
 ` npm i easy-cryptography-js`
