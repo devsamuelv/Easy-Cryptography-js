@@ -1,5 +1,5 @@
 {
-    "name": "Crypt-JS",
+    "name": "easy-cryptography-js",
     "version": "0.0.5",
     "description": "it is an AES Encryption and Decryption Package",
     "main": "AES_256.js",

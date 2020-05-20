@@ -1,7 +1,7 @@
-# Crypt-JS
+# Cryptography-JS
 
 ### Install
-` npm i CryptJS`
+` npm i easy-cryptography-js`
 
 ### Documentation
 ``` javascript
