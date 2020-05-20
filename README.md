@@ -6,7 +6,7 @@
 ### Documentation
 ``` javascript
 // for AES 256 CBC encryption
-const AES_256 = require('CryptJS/AES_256.js');
+const AES_256 = require('easy-cryptography-js/AES_256.js');
 
 // encrypt data
 AES_256.encrypt_256_CBC("Your Message", "Your Key", "Your IV");

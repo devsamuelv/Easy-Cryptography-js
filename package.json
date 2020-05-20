@@ -1,6 +1,6 @@
 {
     "name": "easy-cryptography-js",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "it is an AES Encryption and Decryption Package",
     "main": "AES_256.js",
     "scripts": {
@@ -12,7 +12,6 @@
         "url": "https://github.com/DevSamuelV/CryptJS.git"
     },
     "dependencies": {
-        "@types/crypto-js": "^3.1.46",
-        "crypto-js": "^4.0.0"
+        "@types/crypto-js": "^3.1.46"
     }
 }
