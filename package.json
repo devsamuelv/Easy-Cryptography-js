@@ -1,7 +1,7 @@
 {
     "name": "easy-cryptography-js",
-    "version": "0.0.6",
-    "description": "it is an AES Encryption and Decryption Package",
+    "version": "0.0.8",
+    "description": "it is an Easy to use Encryption and Decryption Package",
     "main": "AES_256.js",
     "scripts": {
         "cryptjs-start": "tsc -w"
@@ -9,7 +9,7 @@
     "author": "DevSamuelV",
     "license": "MIT",
     "repository": {
-        "url": "https://github.com/DevSamuelV/CryptJS.git"
+        "url": "https://github.com/DevSamuelV/Easy-Cryptography-js.git"
     },
     "dependencies": {}
 }
