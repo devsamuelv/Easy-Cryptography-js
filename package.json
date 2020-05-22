@@ -1,10 +1,10 @@
 {
     "name": "easy-cryptography-js",
-    "version": "0.0.9",
+    "version": "0.0.11",
     "description": "it is an Easy to use Encryption and Decryption Package",
-    "main": "AES_256.js",
+    "main": "test.js",
     "scripts": {
-        "server-start": "tsc -w",
+        "start": "tsc -w",
         "publish": "npm publish --access=public"
     },
     "author": "DevSamuelV",
@@ -17,6 +17,7 @@
         "aes",
         "crypto-js",
         "cryptography",
-        "easy cryptography"
+        "easy cryptography",
+        "easy-to-use"
     ]
 }

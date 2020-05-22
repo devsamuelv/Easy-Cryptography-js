@@ -5,14 +5,20 @@
 
 ### Documentation
 ``` javascript
-// for AES 256 CBC encryption
+// for AES 256 encryption
 const AES_256 = require('easy-cryptography-js/AES_256.js');
 
-// encrypt data
+// encrypt data 256 CBC
 AES_256.encrypt_256_CBC("Your Message", "Your Key", "Your IV");
 
-// decrypt data
+// decrypt data 256 CBC
 AES_256.decrypt_256_CBC("Your Encrypted Message", "Your Key", "Your IV");
+
+// encrypt data 256 GCM
+AES_256.encrypt_256_GCM("Your Message", "Your Key", "Your IV");
+
+// decrypt data 256 GCM
+AES_256.decrypt_256_GCM("Your Encrypted Message", "Your Key", "Your IV");
 
 ```
 
