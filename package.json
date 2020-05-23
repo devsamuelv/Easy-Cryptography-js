@@ -1,11 +1,10 @@
 {
     "name": "easy-cryptography-js",
-    "version": "0.0.11",
+    "version": "0.0.13",
     "description": "it is an Easy to use Encryption and Decryption Package",
     "main": "test.js",
     "scripts": {
-        "start": "tsc -w",
-        "publish": "npm publish --access=public"
+        "start": "tsc -w"
     },
     "author": "DevSamuelV",
     "license": "MIT",
