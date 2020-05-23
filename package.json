@@ -1,7 +1,7 @@
 {
     "name": "easy-cryptography-js",
     "version": "0.0.13",
-    "description": "it is an Easy to use Encryption and Decryption Package",
+    "description": "it is an Easy to use Hashing and Encryption and Decryption Package",
     "main": "test.js",
     "scripts": {
         "start": "tsc -w"
