@@ -1,5 +1,4 @@
 import * as crypto from 'crypto';
-
 // Algorithms
 const SHA_512_Algorithm = "sha512";
 const SHA_384_Algorithm = "sha384";

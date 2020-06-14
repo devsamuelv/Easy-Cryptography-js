@@ -1,9 +1,13 @@
 import * as crypto from "crypto";
+import * as tls from 'tls';
 
 const algorithmCBC = "aes-256-cbc";
 const algorithmGCM = "aes-256-gcm";
 const algorithmCBC192 = "aes-192-cbc";
 const algorithmGCM192 = "aes-192-gcm";
+
+// ! DeprecationWarning: crypto.createCredentials is deprecated. Use tls.createSecureContext instead.
+// ! DeprecationWarning: crypto.Credentials is deprecated. Use tls.SecureContext instead.
 
 // AES 256 CBC
 export function encrypt_256_CBC(text: any, key: string, iv: string) {
