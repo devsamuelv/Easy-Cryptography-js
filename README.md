@@ -1,4 +1,4 @@
-# Cryptography-JS ![ubuntu CI](https://github.com/DevSamuelV/Easy-Cryptography-js/workflows/ubuntu%20CI/badge.svg) ![Mac OS CI](https://github.com/DevSamuelV/Easy-Cryptography-js/workflows/Mac%20OS%20CI/badge.svg) ![Windows CI](https://github.com/DevSamuelV/Easy-Cryptography-js/workflows/Windows%20CI/badge.svg)
+# easy-cryptography-js ![ubuntu CI](https://github.com/DevSamuelV/Easy-Cryptography-js/workflows/ubuntu%20CI/badge.svg) ![Mac OS CI](https://github.com/DevSamuelV/Easy-Cryptography-js/workflows/Mac%20OS%20CI/badge.svg) ![Windows CI](https://github.com/DevSamuelV/Easy-Cryptography-js/workflows/Windows%20CI/badge.svg)
 
 ### Install
 ` npm i easy-cryptography-js`
