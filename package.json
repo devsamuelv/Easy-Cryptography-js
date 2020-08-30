@@ -1,15 +1,20 @@
 {
     "name": "easy-cryptography-js",
-    "version": "0.0.19",
+    "version": "0.0.20",
     "description": "it is an Easy to use Hashing and Encryption and Decryption Package",
-    "main": "test.js",
+    "main": "Main.ts",
     "scripts": {
         "start": "tsc -w"
     },
+    "types": "Main.d.ts",
     "author": "DevSamuelV",
     "license": "MIT",
     "repository": {
         "url": "https://github.com/DevSamuelV/Easy-Cryptography-js.git"
+    },
+    "devDependencies": {
+        "dts-gen": "^0.6.0"
+
     },
     "dependencies": {
         "@types/node": "^14.6.2"

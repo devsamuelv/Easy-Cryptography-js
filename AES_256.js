@@ -1,13 +1,7 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var crypto = __importStar(require("crypto"));
+exports.__esModule = true;
+exports.decrypt_256_GCM = exports.encrypt_256_GCM = exports.decrypt_256_CBC = exports.encrypt_256_CBC = void 0;
+var crypto = require("crypto");
 var algorithmCBC = "aes-256-cbc";
 var algorithmGCM = "aes-256-gcm";
 var algorithmCBC192 = "aes-192-cbc";
