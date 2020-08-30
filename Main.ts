@@ -10,6 +10,12 @@ const algorithmGCM192 = "aes-192-gcm";
 // ! DeprecationWarning: crypto.Credentials is deprecated. Use tls.SecureContext instead.
 
 // AES 256 CBC
+/**
+ * 
+ * @param text 
+ * @param key 
+ * @param iv 
+ */
 export function encrypt_256_CBC(text: any, key: string, iv: string) {
   if (key.length != 32) { throw "Key Length Must Be 32 Characters Long"; }
   if (iv.length != 16) { throw "The IV Length Must Be 16 Characters Long"; }
@@ -19,6 +25,12 @@ export function encrypt_256_CBC(text: any, key: string, iv: string) {
   return { iv: iv.toString(), encryptedData: encrypted.toString("hex") };
 }
 
+/**
+ * 
+ * @param text 
+ * @param key 
+ * @param iv 
+ */
 export function decrypt_256_CBC(text: any, key: string, iv: string) {
   if (key.length != 32) { throw "Key Length Must Be 32 Characters Long"; }
   if (iv.length != 16) { throw "The IV Length Must Be 16 Characters Long"; }
@@ -35,6 +47,12 @@ export function decrypt_256_CBC(text: any, key: string, iv: string) {
 }
 
 // AES 256 GCM
+/**
+ * 
+ * @param text 
+ * @param key 
+ * @param iv 
+ */
 export function encrypt_256_GCM(text: any, key: string, iv: string) {
   if (key.length != 32) { throw "Key Length Must Be 32 Characters Long"; }
   if (iv.length != 16) { throw "The IV Length Must Be 16 Characters Long"; }
@@ -44,6 +62,12 @@ export function encrypt_256_GCM(text: any, key: string, iv: string) {
   return { iv: iv.toString(), encryptedData: encrypted.toString("hex") };
 }
 
+/**
+ * 
+ * @param text 
+ * @param key 
+ * @param iv 
+ */
 export function decrypt_256_GCM(text: any, key: string, iv: string) {
   if (key.length != 32) { throw "Key Length Must Be 32 Characters Long"; }
   if (iv.length != 16) { throw "The IV Length Must Be 16 Characters Long"; }
@@ -60,29 +84,29 @@ export function decrypt_256_GCM(text: any, key: string, iv: string) {
 }
 
 // ! In Development DO NOT USE!!
-function encrypt_192_CBC(text: string, key: string, iv: string) {
-  if (key.length != 28) { throw "Key Length Must Be 32 Characters Long"; }
-  if (iv.length != 16) { throw "The IV Length Must Be 16 Characters Long"; }  
+// function encrypt_192_CBC(text: string, key: string, iv: string) {
+//   if (key.length != 28) { throw "Key Length Must Be 32 Characters Long"; }
+//   if (iv.length != 16) { throw "The IV Length Must Be 16 Characters Long"; }  
 
-  var k = crypto.createHash("md5");
-  k.update(key);
-  var working_key = k.digest();
+//   var k = crypto.createHash("md5");
+//   k.update(key);
+//   var working_key = k.digest();
 
-  var cipher = crypto.createCipheriv(algorithmCBC192, Buffer.from(working_key), iv);
-  var encrypted = cipher.update(text);
-  encrypted = Buffer.concat([encrypted, cipher.final()]);
-  return { iv: iv.toString(), encryptedData: encrypted.toString("hex") };
-}
+//   var cipher = crypto.createCipheriv(algorithmCBC192, Buffer.from(working_key), iv);
+//   var encrypted = cipher.update(text);
+//   encrypted = Buffer.concat([encrypted, cipher.final()]);
+//   return { iv: iv.toString(), encryptedData: encrypted.toString("hex") };
+// }
 
 // ! In Development DO NOT USE!!
-function decrypt_192_CBC(text: string, key: string, iv: string) {
-  if (key.length != 32) { throw "Key Length Must Be 32 Characters Long"; }
-  if (iv.length != 16) { throw "The IV Length Must Be 16 Characters Long"; }
-  var cipher = crypto.createDecipheriv(algorithmCBC192, Buffer.from(key), iv);
-  var decrypted = cipher.update(Buffer.from(text));
-  decrypted = Buffer.concat([decrypted, cipher.final()]);
-  return decrypted.toString();
-}
+// function decrypt_192_CBC(text: string, key: string, iv: string) {
+//   if (key.length != 32) { throw "Key Length Must Be 32 Characters Long"; }
+//   if (iv.length != 16) { throw "The IV Length Must Be 16 Characters Long"; }
+//   var cipher = crypto.createDecipheriv(algorithmCBC192, Buffer.from(key), iv);
+//   var decrypted = cipher.update(Buffer.from(text));
+//   decrypted = Buffer.concat([decrypted, cipher.final()]);
+//   return decrypted.toString();
+// }
 
 // * hashing
 
